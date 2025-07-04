@@ -205,8 +205,11 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="https://formsubmit.co/mhdsyazlan95@gmail.com" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
+                    <form name="contact" netlify netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display:none">
+                          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Full Name" required>
                         </div>
